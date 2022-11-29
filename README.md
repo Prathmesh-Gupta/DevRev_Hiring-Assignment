@@ -8,7 +8,7 @@ PIP (for python modules installation)
 
 Setup/Installation
 
-Download and Extract the provided source code zip file. (download button is located below)
+Download and Extract the provided source code zip file. 
 
 Open your Terminal/Command Prompt window. (make sure to add "python" and "pip" in your environment variables)
 
