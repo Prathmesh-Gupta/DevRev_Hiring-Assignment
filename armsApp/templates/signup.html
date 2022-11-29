@@ -1,0 +1,50 @@
+{% extends 'base.html' %} {% load static %} {% block pageContent %}
+<section class="py-4">
+    <div class="container">
+        <h3 class="fw-bolder text-center">User SignUp</h3>
+        <center>
+            <hr class="bg-primary opacity-100" style="height:3px" width="5%">
+        </center>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
+                <div class="card rounded-0 shadow">
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <form action="" id="register" method="POST">
+                                {% csrf_token %}
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="mb-3">
+                                            <label for="fname" class="control-label">First Name</label>
+                                            <input type="text" id="fname" name="fname" class="form-control form-control-sm rounded-0" placeholder='Full Name' value="" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="lname" class="control-label">Last Name</label>
+                                            <input type="text" id="lname" name="lname" class="form-control form-control-sm rounded-0" placeholder='Last Name' value="" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="control-label">email_id</label>
+                                            <input type="email" id="mail" name="mail" class="form-control form-control-sm rounded-0" placeholder='E-mail' value="" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="Password" class="control-label">Password</label>
+                                            <input type="password" name="password" id="password" class="form-control form-control-sm rounded-0" value="" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="confirmPassword" class="control-label">Confirm Password</label>
+                                            <input type="password" name="cpassword" id="cpassword" class="form-control form-control-sm rounded-0" value="" required>
+                                        </div>
+                                        <div class="text-center mb-3">
+                                            <button type='submit' class=" btn-primary bg-gradient-dark btn-lg rounded-pill w-100"></i> SignUp</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock pageContent %}
