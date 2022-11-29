@@ -8,9 +8,9 @@ Open your Terminal/Command Prompt window. (make sure to add "python" and "pip" i
 Change the working directory to the extracted source code folder.
 
 Run the following commands:
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+-pip install -r requirements.txt
+-python manage.py migrate
+-python manage.py runserver
 
 Keep the terminals open and running.
 Open a web browser and browse http://localhost:8000/ or http://127.0.0.1:8000/
